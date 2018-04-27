@@ -8,19 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		F5C90DD0208FF280005D0BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C90DCF208FF280005D0BBA /* AppDelegate.swift */; };
-		F5C90DD2208FF280005D0BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C90DD1208FF280005D0BBA /* ViewController.swift */; };
+		F5C90DD2208FF280005D0BBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C90DD1208FF280005D0BBA /* MainViewController.swift */; };
 		F5C90DD4208FF284005D0BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C90DD3208FF284005D0BBA /* Assets.xcassets */; };
 		F5C90DD7208FF284005D0BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C90DD5208FF284005D0BBA /* Main.storyboard */; };
+		F5C90DE02090F3FD005D0BBA /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C90DDF2090F3FD005D0BBA /* Circle.swift */; };
+		F5C90DE22090FA52005D0BBA /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C90DE12090FA52005D0BBA /* Point.swift */; };
+		F5C90DE420910052005D0BBA /* SmallestCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C90DE320910052005D0BBA /* SmallestCircle.swift */; };
+		F5C90DE6209105FA005D0BBA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C90DE5209105FA005D0BBA /* Helper.swift */; };
+		F5C90DE820926EF9005D0BBA /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C90DE720926EF9005D0BBA /* Drawer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F5C90DCC208FF280005D0BBA /* SmallestСircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmallestСircle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C90DCF208FF280005D0BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5C90DD1208FF280005D0BBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5C90DD1208FF280005D0BBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5C90DD3208FF284005D0BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5C90DD6208FF284005D0BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5C90DD8208FF284005D0BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C90DD9208FF284005D0BBA /* Smallest_ircle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Smallest_ircle.entitlements; sourceTree = "<group>"; };
+		F5C90DDF2090F3FD005D0BBA /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		F5C90DE12090FA52005D0BBA /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		F5C90DE320910052005D0BBA /* SmallestCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestCircle.swift; sourceTree = "<group>"; };
+		F5C90DE5209105FA005D0BBA /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F5C90DE720926EF9005D0BBA /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +44,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F59D5FDD2092AF98001FD382 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5C90DE12090FA52005D0BBA /* Point.swift */,
+				F5C90DDF2090F3FD005D0BBA /* Circle.swift */,
+				F5C90DE320910052005D0BBA /* SmallestCircle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F59D5FDE2092AFD4001FD382 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5C90DD1208FF280005D0BBA /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		F5C90DC3208FF280005D0BBA = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +82,14 @@
 			isa = PBXGroup;
 			children = (
 				F5C90DCF208FF280005D0BBA /* AppDelegate.swift */,
-				F5C90DD1208FF280005D0BBA /* ViewController.swift */,
+				F59D5FDE2092AFD4001FD382 /* Controllers */,
+				F59D5FDD2092AF98001FD382 /* Models */,
+				F5C90DE720926EF9005D0BBA /* Drawer.swift */,
+				F5C90DE5209105FA005D0BBA /* Helper.swift */,
 				F5C90DD3208FF284005D0BBA /* Assets.xcassets */,
 				F5C90DD5208FF284005D0BBA /* Main.storyboard */,
-				F5C90DD8208FF284005D0BBA /* Info.plist */,
 				F5C90DD9208FF284005D0BBA /* Smallest_ircle.entitlements */,
+				F5C90DD8208FF284005D0BBA /* Info.plist */,
 			);
 			path = "SmallestСircle";
 			sourceTree = "<group>";
@@ -133,8 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5C90DD2208FF280005D0BBA /* ViewController.swift in Sources */,
+				F5C90DE22090FA52005D0BBA /* Point.swift in Sources */,
+				F5C90DD2208FF280005D0BBA /* MainViewController.swift in Sources */,
 				F5C90DD0208FF280005D0BBA /* AppDelegate.swift in Sources */,
+				F5C90DE420910052005D0BBA /* SmallestCircle.swift in Sources */,
+				F5C90DE02090F3FD005D0BBA /* Circle.swift in Sources */,
+				F5C90DE6209105FA005D0BBA /* Helper.swift in Sources */,
+				F5C90DE820926EF9005D0BBA /* Drawer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
